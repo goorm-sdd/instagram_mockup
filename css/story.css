@@ -1,0 +1,50 @@
+.story-bar {
+  width: 375px;
+  height: 98px;
+  display: flex;
+  overflow-x: auto;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.story-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.story-item {
+  width: 62px;
+  height: 81px;
+  flex: none;
+  margin-right: 21px;
+  text-align: center;
+}
+
+.story-avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #FBAA47,#D91A46,#A60F93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-avatar img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.story-username {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 5px;
+  color: #262626;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
