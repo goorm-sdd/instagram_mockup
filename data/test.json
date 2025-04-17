@@ -1,0 +1,38 @@
+[
+    {
+        "id": "post1",
+        "username": "sunny_day",
+        "avatar": "assets/images/user1.jpg",
+        "image": "assets/images/post1.jpg",
+        "caption": "오늘 날씨 완전 좋다 ☀️",
+        "likes": 128,
+        "isLiked": false,
+        "comments": [
+            {
+                "user": "min_park",
+                "text": "와 배경 미쳤다..."
+            },
+            {
+                "user": "yeji_lee",
+                "text": "날씨 짱좋아 보인다!"
+            }
+        ],
+        "timestamp": "2025-04-17T09:15:00"
+    },
+    {
+        "id": "post2",
+        "username": "coffee_holic",
+        "avatar": "assets/images/user2.jpg",
+        "image": "assets/images/post2.jpg",
+        "caption": "아이스라떼는 진리다 🤍",
+        "likes": 203,
+        "isLiked": true,
+        "comments": [
+            {
+                "user": "java_coder",
+                "text": "커피는 역시 아라비카 원두!"
+            }
+        ],
+        "timestamp": "2025-04-16T18:40:00"
+    }
+]
