@@ -118,3 +118,10 @@
   margin-top: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
