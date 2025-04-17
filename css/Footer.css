@@ -1,0 +1,38 @@
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 375px;            /* 모바일 기준 너비 */
+  height: 79px;
+  background-color: #FAFAFA;
+  border-top: 1px solid #ddd;
+  z-index: 999;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-menu i.material-icons {
+  font-size: 28px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-menu .profile-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.footer-menu a.active i,
+.footer-menu a.active .profile-icon {
+  color: #000;
+  border-color: #000;
+}
