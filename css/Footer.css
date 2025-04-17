@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 375px;            /* 모바일 기준 너비 */
+  width: 375px;
   height: 79px;
   background-color: #FAFAFA;
   border-top: 1px solid #ddd;
@@ -17,22 +17,20 @@
 }
 
 .footer-menu i.material-icons {
-  font-size: 28px;
-  color: #333;
-  transition: color 0.3s ease;
+  font-size: 24px;
+  color: #262626;
+}
+
+.footer-menu i.material-icons:hover {
+  color: #000;
 }
 
 .footer-menu .profile-icon {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid transparent;
   transition: border 0.3s ease;
 }
 
-.footer-menu a.active i,
-.footer-menu a.active .profile-icon {
-  color: #000;
-  border-color: #000;
-}
