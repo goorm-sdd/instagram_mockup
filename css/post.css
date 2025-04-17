@@ -71,6 +71,10 @@
   margin-right: 0;
 }
 
+.like-btn.liked {
+  color: #ed4956;
+}
+
 .like-avatar {
   width: 17px;
   height: 17px;

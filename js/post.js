@@ -21,7 +21,7 @@ posts.forEach((post) => {
     </div>
     <div class="post-actions">
       <div class="left-actions">
-        <span class="material-icons">favorite_border</span>
+        <span class="material-icons like-btn">${post.isLiked ? "favorite" : "favorite_border"}</span>
         <span class="material-icons">chat_bubble_outline</span>
         <span class="material-icons">send</span>
       </div>
@@ -48,6 +48,19 @@ posts.forEach((post) => {
   `;
 
   feed.appendChild(card);
+
+  const likeBtn = card.querySelector(".like-btn");
+  const likeText = card.querySelector(".post-likes span");
+  let liked = post.isLiked;
+  let likeCount = post.likes;
+
+  likeBtn.addEventListener("click", () => {
+    liked = !liked;
+    likeBtn.textContent = liked ? "favorite" : "favorite_border";
+    likeBtn.classList.toggle("liked", liked);
+    likeCount += liked ? 1 : -1;
+    likeText.innerHTML = `<strong>${randomUser}</strong>님 외 <strong>${likeCount}명</strong>이 좋아합니다`;
+  });
 });
 
 function formatDateToMonthDay(timestamp) {
