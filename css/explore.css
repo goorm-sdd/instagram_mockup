@@ -11,6 +11,10 @@ header {
   padding-bottom: 15px;
 }
 
+/* header 부분 */
+/* header 부분 */
+/* header 부분 */
+
 .header-container {
   display: flex;
   width: 100%;
@@ -58,4 +62,24 @@ header {
   border: none;
   background-color: unset;
   cursor: pointer;
+}
+
+/* post 부분 */
+/* post 부분 */
+/* post 부분 */
+
+.main-content {
+  padding-top: 1px;
+}
+
+.explore-post-feed {
+  width: 375px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+  grid-auto-rows: 124.34px;
+}
+
+.explore-post-image img {
+  max-width: 100%;
 }
