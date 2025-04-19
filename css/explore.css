@@ -78,6 +78,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1px;
   grid-auto-rows: 124.34px;
+  padding-bottom: 81px;
 }
 
 .explore-post-image img {
