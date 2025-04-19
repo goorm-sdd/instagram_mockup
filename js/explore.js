@@ -8,7 +8,7 @@ posts.forEach((post) => {
 
   card.innerHTML = `
     <div class="explore-post-image">
-      <a href="post.html#${post.id}">
+      <a href="explorePost.html#${post.id}">
         <img src="${post.image}" alt="explore post image" />
       </a>
     </div>
@@ -16,24 +16,3 @@ posts.forEach((post) => {
 
   feed.appendChild(card);
 });
-
-// 게시물 이동!!
-
-fetch("data/posts.json")
-  .then((response) => response.json())
-  .then((posts) => {
-    const explore = document.getElementById("explore");
-    posts.forEach((post) => {
-      const img = document.createElement("img");
-      img.src = post.image;
-      img.alt = post.caption;
-      img.classList.add("thumbnail");
-
-      // 클릭하면 post.html로 이동 + ID 전달
-      img.addEventListener("click", () => {
-        window.location.href = `post.html#${post.id}`;
-      });
-
-      explore.appendChild(img);
-    });
-  });
