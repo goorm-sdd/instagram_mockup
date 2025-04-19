@@ -71,17 +71,18 @@ header {
 
 .main-content {
   padding-top: 1px;
+  width: 375px;
 }
 
 .explore-post-feed {
-  width: 375px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1px;
   grid-auto-rows: 124.34px;
   padding-bottom: 81px;
+  grid-auto-flow: row dense;
 }
 
-.explore-post-image img {
-  max-width: 100%;
+.explore-post-card img {
+  width: 100%;
 }
