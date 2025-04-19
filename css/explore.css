@@ -62,6 +62,7 @@ header {
   border: none;
   background-color: unset;
   cursor: pointer;
+  padding-bottom: 15px;
 }
 
 /* post 부분 */
