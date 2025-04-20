@@ -8,6 +8,7 @@ body {
   height: 812px;
   background-color: black;
   position: relative;
+  overflow: hidden;
 }
 
 .back-to-main {
@@ -23,6 +24,7 @@ body {
   color: white;
   font-size: 25px;
   text-decoration: none;
+  z-index: 5;
 }
 
 .chat-bar {
@@ -61,4 +63,15 @@ body {
 
 .meatball-icon img {
   padding: 4px;
+}
+
+.story-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 101px;
+  object-fit: contain;
+  width: 100%;
+  height: calc(100% - 101px);
 }
