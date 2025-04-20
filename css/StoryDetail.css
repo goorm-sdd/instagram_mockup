@@ -40,8 +40,25 @@ body {
   width: 24px;
 }
 
-.message-text {
-  display: inline-block;
+.write-message-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 165px 6px 5px;
+  margin-left: 8px;
+  margin-right: 3px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
 
-  color: white;
+.message-text {
+  font-size: 15px;
+}
+
+.story-airplane-icon img {
+  padding: 4px;
+}
+
+.meatball-icon img {
+  padding: 4px;
 }
