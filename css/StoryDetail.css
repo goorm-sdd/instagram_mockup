@@ -65,6 +65,11 @@ body {
   padding: 4px;
 }
 
+.slider {
+  display: flex;
+  align-items: center;
+}
+
 .story-image img {
   position: absolute;
   top: 0;
@@ -74,4 +79,23 @@ body {
   object-fit: contain;
   width: 100%;
   height: calc(100% - 101px);
+  z-index: 1;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: white;
+  z-index: 2;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
 }
