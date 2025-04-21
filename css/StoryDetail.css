@@ -27,6 +27,12 @@ body {
   z-index: 5;
 }
 
+i {
+  color: white;
+  padding: 2px;
+  margin-left: 2px;
+}
+
 .chat-bar {
   position: absolute;
   bottom: 0;
@@ -35,18 +41,19 @@ body {
   height: 101px;
   display: flex;
   align-items: center;
-  background-color: rgb(255, 59, 59);
 }
 
-.chat-bar img {
+.write-message-bar img {
   width: 24px;
+  background-color: gray;
+  border-radius: 30px;
 }
 
 .write-message-bar {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 6px 165px 6px 5px;
+  padding: 6px 160px 6px 5px;
   margin-left: 8px;
   margin-right: 3px;
   border: 1px solid white;
@@ -55,14 +62,7 @@ body {
 
 .message-text {
   font-size: 15px;
-}
-
-.story-airplane-icon img {
-  padding: 4px;
-}
-
-.meatball-icon img {
-  padding: 4px;
+  color: white;
 }
 
 .slider {
