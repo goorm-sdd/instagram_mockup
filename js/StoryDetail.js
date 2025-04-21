@@ -33,9 +33,24 @@ console.log(storyImages);
 
 const arrowLeft = document.querySelector(".arrow-left");
 const arrowRight = document.querySelector(".arrow-right");
+const storyImage = document.querySelector(".story-image");
 
 arrowLeft.addEventListener("click", () => {
-  document.querySelector(".story-images").scrollLeft -= window.innerWidth - 80;
+  const currentPosition = storyImages.scrollLeft;
+  const imageWidth = storyImage.offsetWidth;
+
+  storyImages.scrollTo({
+    left: currentPosition - imageWidth,
+  });
+});
+
+arrowRight.addEventListener("click", () => {
+  const currentPosition = storyImages.scrollLeft;
+  const imageWidth = storyImage.offsetWidth;
+
+  storyImages.scrollTo({
+    left: currentPosition + imageWidth,
+  });
 });
 
 // let currentIndex = images[0];
