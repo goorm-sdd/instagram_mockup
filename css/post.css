@@ -1,7 +1,8 @@
 .post-feed {
-  width: 100%;
+  width: 375px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 79px;
 }
 
 .post-card {
