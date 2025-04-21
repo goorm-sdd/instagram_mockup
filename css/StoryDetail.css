@@ -79,6 +79,10 @@ i {
   align-items: center;
 }
 
+.story-images::-webkit-scrollbar {
+  display: none;
+}
+
 .story-image img {
   top: 0;
   left: 0;
@@ -87,6 +91,7 @@ i {
   object-fit: contain;
   z-index: 1;
   scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 .arrow-left,
