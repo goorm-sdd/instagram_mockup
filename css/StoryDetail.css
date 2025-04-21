@@ -70,7 +70,7 @@ body {
   align-items: center;
 }
 
-.story-image img {
+.story-images img {
   position: absolute;
   top: 0;
   left: 0;
@@ -90,6 +90,7 @@ body {
   font-size: 25px;
   color: white;
   z-index: 2;
+  cursor: pointer;
 }
 
 .arrow-left {
