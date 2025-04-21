@@ -1,23 +1,32 @@
 import { posts } from "../data/mockData.js";
 
 const images = [];
+const addedImages = new Set();
 
 const shuffled = posts.sort(() => 0.5 - Math.random());
 
 for (const post of shuffled) {
-  images.push(post.image);
+  if (!addedImages.has(post.image)) {
+    images.push(post.image);
+    addedImages.add(post.image);
+  }
 
   if (images.length >= 3) break;
 }
 
-let currentIndex = 0;
+console.log(images);
 
-const storyImage = document.querySelector(".story-images img");
-const arrowLeft = document.querySelector(".arrow-left");
-const arrowRight = document.querySelector(".arrow-right");
+const storyImages = document.querySelector(".story-images");
 
-if (images.length > 0) {
-  storyImage.src = images[currentIndex];
+for (let i = 0; i < images.length; i++) {
+  const storyImage = document.createElement("div");
+  storyImage.className = "story-image";
+
+  const image = document.createElement("img");
+  image.src = images[i];
+
+  storyImages.appendChild(storyImage);
+  storyImage.appendChild(image);
 }
 
 let timeoutId;
@@ -29,15 +38,27 @@ function resetTimer() {
   }, 4000);
 }
 
+const arrowLeft = document.querySelector(".arrow-left");
+const arrowRight = document.querySelector(".arrow-right");
+const storyImage = document.querySelector(".story-image");
+
 arrowLeft.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  storyImage.src = images[currentIndex];
+  const currentPosition = storyImages.scrollLeft;
+  const imageWidth = storyImage.offsetWidth;
+
+  storyImages.scrollTo({
+    left: currentPosition - imageWidth,
+  });
   resetTimer();
 });
 
 arrowRight.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  storyImage.src = images[currentIndex];
+  const currentPosition = storyImages.scrollLeft;
+  const imageWidth = storyImage.offsetWidth;
+
+  storyImages.scrollTo({
+    left: currentPosition + imageWidth,
+  });
   resetTimer();
 });
 
