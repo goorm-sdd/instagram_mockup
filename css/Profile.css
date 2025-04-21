@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  background: white;
+  color: #111;
+  font-family: system-ui, sans-serif;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile,
+.tab-nav {
+  padding: 0 16px;
+}
+
+.profile {
+  padding-top: 1.5rem;
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-meta {
+  margin-top: 1rem;
+}
+
+.display-name {
+  font-weight: 600;
+}
+
+.bio {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.edit-button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* TAB NAV */
+.tab-nav {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: 1rem;
+  width: 90%;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.4rem 0;
+  background: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.tab-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.tab.active {
+  border-bottom: 2px solid black;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0;               
+}
+
+.grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.scroll-sentinel {
+  height: 1px;
+}

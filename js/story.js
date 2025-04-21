@@ -33,3 +33,29 @@ storyUsers.forEach((user) => {
 
   storyBar.appendChild(storyItem);
 });
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+storyBar.addEventListener("mousedown", (e) => {
+  isDown = true;
+  storyBar.classList.add("active");
+  startX = e.pageX - storyBar.offsetLeft;
+  scrollLeft = storyBar.scrollLeft;
+});
+storyBar.addEventListener("mouseleave", () => {
+  isDown = false;
+  storyBar.classList.remove("active");
+});
+storyBar.addEventListener("mouseup", () => {
+  isDown = false;
+  storyBar.classList.remove("active");
+});
+storyBar.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - storyBar.offsetLeft;
+  const walk = (x - startX) * 1.5; // scroll speed
+  storyBar.scrollLeft = scrollLeft - walk;
+});

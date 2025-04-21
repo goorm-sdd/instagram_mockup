@@ -16,7 +16,7 @@ header {
 
 .header-container {
   display: flex;
-  width: 100%;
+  width: 90%;
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
@@ -38,7 +38,7 @@ header {
 .explore-search-bar {
   width: 320px;
   height: 30px;
-  padding-left: 32px;
+  padding-left: 30px;
   background-color: rgb(228, 228, 228);
   border: 0px solid;
   border-radius: 6px;
@@ -59,10 +59,12 @@ header {
 }
 
 .explore-search-button {
+  width: 25px;
+  height: 25px;
   border: none;
   background-color: unset;
   cursor: pointer;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* post 부분 */
@@ -85,4 +87,12 @@ header {
 
 .explore-post-card img {
   width: 100%;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
