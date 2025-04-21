@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instagram-Explore</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/explore.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="search-bar">
+          <input
+            class="explore-search-bar"
+            type="search"
+            placeholder="Search"
+          />
+          <div class="autocomplete-results"></div>
+          <i class="material-icons search-bar-icon">search</i>
+        </div>
+        <button class="explore-search-button">
+          <i class="material-icons search-icon">search</i>
+        </button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="explore-post-feed" id="explore-post-feed"></section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/IncludeFooter.js"></script>
+
+    <script type="module" src="../js/explore.js"></script>
+    <script type="module" src="../js/searchRedirect.js"></script>
+    <script type="module" src="../js/search.js"></script>
+
+  </body>
+</html>
