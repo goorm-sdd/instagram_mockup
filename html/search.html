@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Profile</title>
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/Footer.css" />
+  <link rel="stylesheet" href="../css/Profile.css" />
+</head>
+
+  <div id="header-placeholder"></div>
+
+  <section class="profile">
+    <div class="profile-top">
+      <img src="../assets/images/footer_profile.png" alt="Profile" class="profile-icon profile-avatar" />
+      <div class="stats">
+        <div><strong class="post-count">0</strong><span>게시물</span></div>
+        <div><strong class="followers">0</strong><span>팔로워</span></div>
+        <div><strong class="following">0</strong><span>팔로잉</span></div>
+      </div>
+    </div>
+    <div class="profile-meta">
+      <p class="display-name profile-username">사용자명</p>
+      <p class="bio profile-bio"></p>
+      <button class="edit-button">Edit Profile</button>
+    </div>
+  </section>
+
+  <nav class="tab-nav">
+    <button class="tab active">
+      <div class="tab-inner">
+        <img src="../assets/icons/grid.png" alt="게시물" class="tab-icon" />
+      </div>
+    </button>
+    <button class="tab">
+      <div class="tab-inner">
+        <img src="../assets/icons/tag.png" alt="태그됨" class="tab-icon" />
+      </div>
+    </button>
+  </nav>
+  <section class="grid" id="user-posts"></section>
+
+  <div id="footer-placeholder"></div>
+ 
+  <script src="../js/include.js"></script>
+  <script src="../js/IncludeFooter.js"></script>
+  <script type="module" src="../js/userProfile.js"></script>
+</body>
+</html>
