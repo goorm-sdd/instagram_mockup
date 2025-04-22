@@ -108,7 +108,7 @@ arrowLeft.addEventListener("click", () => {
   if (currentLocation < 0) {
     currentLocation = 0;
   }
-  // resetTimer();
+  resetTimer();
 });
 
 arrowRight.addEventListener("click", () => {
@@ -123,7 +123,7 @@ arrowRight.addEventListener("click", () => {
   if (currentLocation >= images.length) {
     currentLocation = images.length - 1;
   }
-  // resetTimer();
+  resetTimer();
 });
 
-// resetTimer();
+resetTimer();
