@@ -6,6 +6,7 @@ body {
   width: 375px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 80px; /* Ensures last image isn’t hidden by footer */
 }
 
 .profile,
@@ -20,7 +21,8 @@ body {
 .profile-top {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .profile-img {
@@ -28,6 +30,12 @@ body {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .stats {
@@ -111,9 +119,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  margin-top: 1rem;
+  margin: 0; /* Removed top margin */
   width: 100%;
-  padding: 0;               
+  padding: 0;
 }
 
 .grid img {
