@@ -40,7 +40,7 @@ body {
 
 .stats {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;
   font-size: 0.9rem;
 }
 
