@@ -26,7 +26,9 @@ storyUsers.forEach((user) => {
   storyItem.innerHTML = `
     <div class="story-avatar">
       <img src="${user.avatar}" alt="${user.username}" />
-      <a class="to-story-detail" href="../html/StoryDetail.html"></a>
+      <a class="to-story-detail" href="../html/StoryDetail.html?username=${encodeURIComponent(
+        user.username
+      )}"></a>
     </div>
     <p class="story-username">${user.username}</p>
   `;
