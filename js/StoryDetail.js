@@ -1,5 +1,27 @@
 import { posts } from "../data/mockData.js";
 
+function getUsernameFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get("username");
+}
+
+const username = getUsernameFromURL();
+const user = posts.find((user) => user.username === username);
+
+const storyUser = document.createElement("div");
+storyUser.className = "story-user";
+storyUser.innerHTML = `
+  <div class="story-avatar">
+    <img src="${user.avatar}" alt="${user.username}" />
+  </div>
+  <p class="story-username">${user.username}</p>
+`;
+
+const background = document.querySelector(".background");
+if (background) {
+  background.appendChild(storyUser);
+}
+
 const images = [];
 const addedImages = new Set();
 
