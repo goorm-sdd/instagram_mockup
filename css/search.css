@@ -2,3 +2,40 @@
 .hide-grid {
   display: none !important;
 }
+
+.search-bar {
+  position: relative;
+  padding-bottom: 15px;
+  margin-top: 10px; 
+}
+
+.autocomplete-results {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 100%; 
+  max-height: 300px; 
+  background-color: white; 
+  border-radius: 6px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  z-index: 999; 
+}
+
+
+.autocomplete-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.autocomplete-item:hover {
+  background-color: #f0f0f0; 
+}
+
+.autocomplete-item-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px; 
+}
