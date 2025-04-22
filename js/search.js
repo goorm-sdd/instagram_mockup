@@ -6,17 +6,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!searchInput || !resultBox) return;
 
-  
+ 
   const usernames = [...new Set(posts.map(post => post.username))];
 
-
   const renderResults = (filtered) => {
-    resultBox.innerHTML = "";
+    resultBox.innerHTML = "";  
 
     filtered.forEach(username => {
+      
+      const userPost = posts.find(post => post.username === username);
+      const userAvatar = userPost ? userPost.avatar : ''; 
+
       const div = document.createElement("div");
       div.classList.add("autocomplete-item");
-      div.textContent = username;
+
+      
+      const imgElement = document.createElement("img");
+      imgElement.src = userAvatar; 
+      imgElement.alt = username; 
+      imgElement.classList.add("autocomplete-item-img"); 
+
+      const textElement = document.createElement("span");
+      textElement.textContent = username;
+
+      div.appendChild(imgElement);  
+      div.appendChild(textElement);  
 
       div.addEventListener("click", () => {
         window.location.href = `search.html?user=${encodeURIComponent(username)}`;
@@ -26,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  
   searchInput.addEventListener("input", () => {
     const keyword = searchInput.value.trim().toLowerCase();
     if (keyword === "") {
@@ -41,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     renderResults(filtered);
   });
 
-  
   document.addEventListener("click", (e) => {
     if (!resultBox.contains(e.target) && e.target !== searchInput) {
       resultBox.innerHTML = "";
