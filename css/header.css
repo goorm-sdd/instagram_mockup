@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 375px;
+  height: 88px;
+  background-color: #fafafa;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.instagram-icon {
+  width: 105px;
+  height: auto;
+}
+
+.right-header-container {
+  display: flex;
+  gap: 16px;
+}
+
+.right-header-container img {
+  width: 24px;
+  height: auto;
+}
