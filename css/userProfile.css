@@ -204,3 +204,9 @@ header {
 .scroll-sentinel {
   height: 1px;
 }
+
+.hidden-text {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  visibility: hidden;
+}
