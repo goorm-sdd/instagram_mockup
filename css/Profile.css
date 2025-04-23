@@ -1,11 +1,10 @@
 html, body {
-  height: 100%;
-  width: 375px;
   margin: 0;
   background: white;
   color: #111;
   font-family: system-ui, sans-serif;
   scrollbar-width: none;
+  width: 375px;
 }
 
 body::-webkit-scrollbar {
@@ -36,6 +35,7 @@ header {
   height: 88px;
   background-color: #fafafa;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .header-container {
