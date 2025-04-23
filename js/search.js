@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!searchInput || !resultBox) return;
 
-  // usernames 배열 만들기
+ 
   const usernames = [...new Set(posts.map(post => post.username))];
 
   const renderResults = (filtered) => {
@@ -39,13 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // 검색어 입력시 필터링
   searchInput.addEventListener("input", () => {
     const keyword = searchInput.value.trim().toLowerCase();
     if (keyword === "") {
       resultBox.innerHTML = "";
       if (exploreGrid) {
-        exploreGrid.classList.remove("hide-grid"); // 검색어가 비었을 때 grid 보이게
+        exploreGrid.classList.remove("hide-grid"); 
       }
       return;
     }
@@ -55,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (exploreGrid) {
-      exploreGrid.classList.add("hide-grid"); // 검색어 입력 시 grid 숨기기
+      exploreGrid.classList.add("hide-grid"); 
     }
 
     renderResults(filtered);
