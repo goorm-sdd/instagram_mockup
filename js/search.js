@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!searchInput || !resultBox) return;
 
- 
   const usernames = [...new Set(posts.map(post => post.username))];
 
   const renderResults = (filtered) => {
@@ -32,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       div.appendChild(textElement);
 
       div.addEventListener("click", () => {
-        window.location.href = `search.html?user=${encodeURIComponent(username)}`;
+        window.location.href = `userProfile.html?user=${encodeURIComponent(username)}`;
       });
 
       resultBox.appendChild(div);
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (keyword === "") {
       resultBox.innerHTML = "";
       if (exploreGrid) {
-        exploreGrid.classList.remove("hide-grid"); 
+        exploreGrid.classList.remove("hide-grid");
       }
       return;
     }
@@ -57,12 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
       exploreGrid.classList.add("hide-grid"); 
     }
 
-    renderResults(filtered);
+    renderResults(filtered); 
   });
 
   document.addEventListener("click", (e) => {
     if (!resultBox.contains(e.target) && e.target !== searchInput) {
-      resultBox.innerHTML = "";
+      resultBox.innerHTML = ""; 
     }
   });
 });
