@@ -1,0 +1,36 @@
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 375px;
+  height: 79px;
+  background-color: #FAFAFA;
+  border-top: 1px solid #ddd;
+  z-index: 999;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-menu i.material-icons {
+  font-size: 24px;
+  color: #262626;
+}
+
+.footer-menu i.material-icons:hover {
+  color: #000;
+}
+
+.footer-menu .profile-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
