@@ -36,7 +36,7 @@ instagram-mockup/
 ├── html/
 │   ├── index.html
 │   ├── profile.html
-│   ├── StoryDetail.html
+│   ├── storyDetail.html
 │   └── ...
 ├── js/
 │   ├── post.js
