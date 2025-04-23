@@ -2,7 +2,7 @@ export const posts = [
   {
     id: "post1",
     username: "min_park",
-    avatar: "../assets/images/user1.jpg",
+    avatar: "../assets/images/user1.png",
     image: "../assets/images/post2.jpg",
     caption: "여행 가고 싶다 🌍",
     likes: 61,
@@ -18,7 +18,7 @@ export const posts = [
   {
     id: "post2",
     username: "min_park",
-    avatar: "../assets/images/user1.jpg",
+    avatar: "../assets/images/user1.png",
     image: "../assets/images/post5.jpg",
     caption: "요즘 빠진 책 📚",
     likes: 41,
@@ -34,7 +34,7 @@ export const posts = [
   {
     id: "post3",
     username: "java_coder",
-    avatar: "../assets/images/user2.jpg",
+    avatar: "../assets/images/user2.png",
     image: "../assets/images/post3.jpg",
     caption: "오늘 날씨 완전 좋다 ☀️",
     likes: 341,
@@ -50,7 +50,7 @@ export const posts = [
   {
     id: "post4",
     username: "sunny_day",
-    avatar: "../assets/images/user3.jpg",
+    avatar: "../assets/images/user3.png",
     image: "../assets/images/post5.jpg",
     caption: "버스킹 공연 다녀왔어요 🎸",
     likes: 113,
@@ -70,7 +70,7 @@ export const posts = [
   {
     id: "post5",
     username: "coffee_holic",
-    avatar: "../assets/images/user4.jpg",
+    avatar: "../assets/images/user4.png",
     image: "../assets/images/post9.jpg",
     caption: "여행 가고 싶다 🌍",
     likes: 12,
@@ -86,7 +86,7 @@ export const posts = [
   {
     id: "post6",
     username: "java_coder",
-    avatar: "../assets/images/user2.jpg",
+    avatar: "../assets/images/user2.png",
     image: "../assets/images/post1.jpg",
     caption: "코딩하다가 커피 타임 ☕",
     likes: 495,
@@ -106,7 +106,7 @@ export const posts = [
   {
     id: "post7",
     username: "sky_walker",
-    avatar: "../assets/images/user5.jpg",
+    avatar: "../assets/images/user5.png",
     image: "../assets/images/post6.jpg",
     caption: "요즘 빠진 책 📚",
     likes: 424,
@@ -126,7 +126,7 @@ export const posts = [
   {
     id: "post8",
     username: "coffee_holic",
-    avatar: "../assets/images/user4.jpg",
+    avatar: "../assets/images/user4.png",
     image: "../assets/images/post2.jpg",
     caption: "오늘 날씨 완전 좋다 ☀️",
     likes: 196,
@@ -137,7 +137,7 @@ export const posts = [
   {
     id: "post9",
     username: "min_park",
-    avatar: "../assets/images/user1.jpg",
+    avatar: "../assets/images/user1.png",
     image: "../assets/images/post9.jpg",
     caption: "버스킹 공연 다녀왔어요 🎸",
     likes: 13,
@@ -153,7 +153,7 @@ export const posts = [
   {
     id: "post10",
     username: "coffee_holic",
-    avatar: "../assets/images/user4.jpg",
+    avatar: "../assets/images/user4.png",
     image: "../assets/images/post2.jpg",
     caption: "여행 가고 싶다 🌍",
     likes: 370,
@@ -169,7 +169,7 @@ export const posts = [
   {
     id: "post11",
     username: "music_lover",
-    avatar: "../assets/images/user6.jpg",
+    avatar: "../assets/images/user6.png",
     image: "../assets/images/post7.jpg",
     caption: "산책하기 딱 좋은 날!",
     likes: 41,
@@ -189,7 +189,7 @@ export const posts = [
   {
     id: "post12",
     username: "java_coder",
-    avatar: "../assets/images/user2.jpg",
+    avatar: "../assets/images/user2.png",
     image: "../assets/images/post8.jpg",
     caption: "코딩하다가 커피 타임 ☕",
     likes: 206,
@@ -205,7 +205,7 @@ export const posts = [
   {
     id: "post13",
     username: "min_park",
-    avatar: "../assets/images/user1.jpg",
+    avatar: "../assets/images/user1.png",
     image: "../assets/images/post1.jpg",
     caption: "여행 가고 싶다 🌍",
     likes: 60,
@@ -225,7 +225,7 @@ export const posts = [
   {
     id: "post14",
     username: "music_lover",
-    avatar: "../assets/images/user6.jpg",
+    avatar: "../assets/images/user6.png",
     image: "../assets/images/post9.jpg",
     caption: "요즘 빠진 책 📚",
     likes: 91,
@@ -245,7 +245,7 @@ export const posts = [
   {
     id: "post15",
     username: "sky_walker",
-    avatar: "../assets/images/user5.jpg",
+    avatar: "../assets/images/user5.png",
     image: "../assets/images/post2.jpg",
     caption: "오늘 날씨 완전 좋다 ☀️",
     likes: 335,
@@ -261,7 +261,7 @@ export const posts = [
   {
     id: "post16",
     username: "bookworm",
-    avatar: "../assets/images/user7.jpg",
+    avatar: "../assets/images/user7.png",
     image: "../assets/images/post1.jpg",
     caption: "코딩하다가 커피 타임 ☕",
     likes: 450,
@@ -281,7 +281,7 @@ export const posts = [
   {
     id: "post17",
     username: "sky_walker",
-    avatar: "../assets/images/user5.jpg",
+    avatar: "../assets/images/user5.png",
     image: "../assets/images/post5.jpg",
     caption: "요즘 빠진 책 📚",
     likes: 227,
@@ -292,7 +292,7 @@ export const posts = [
   {
     id: "post18",
     username: "min_park",
-    avatar: "../assets/images/user1.jpg",
+    avatar: "../assets/images/user1.png",
     image: "../assets/images/post1.jpg",
     caption: "요즘 빠진 책 📚",
     likes: 364,
@@ -303,7 +303,7 @@ export const posts = [
   {
     id: "post19",
     username: "coffee_holic",
-    avatar: "../assets/images/user4.jpg",
+    avatar: "../assets/images/user4.png",
     image: "../assets/images/post4.jpg",
     caption: "아이스라떼는 진리다 🤍",
     likes: 476,
@@ -323,7 +323,7 @@ export const posts = [
   {
     id: "post20",
     username: "yeji_lee",
-    avatar: "../assets/images/user8.jpg",
+    avatar: "../assets/images/user8.png",
     image: "../assets/images/post7.jpg",
     caption: "요즘 빠진 책 📚",
     likes: 279,
@@ -334,7 +334,7 @@ export const posts = [
   {
     id: "post21",
     username: "min_park",
-    avatar: "../assets/images/user1.jpg",
+    avatar: "../assets/images/user1.png",
     image: "../assets/images/post10.jpg",
     caption: "파란 하늘에 기분까지 맑음!",
     likes: 227,
@@ -354,7 +354,7 @@ export const posts = [
   {
     id: "post22",
     username: "music_lover",
-    avatar: "../assets/images/user6.jpg",
+    avatar: "../assets/images/user6.png",
     image: "../assets/images/post8.jpg",
     caption: "오늘 날씨 완전 좋다 ☀️",
     likes: 330,
@@ -370,7 +370,7 @@ export const posts = [
   {
     id: "post23",
     username: "sky_walker",
-    avatar: "../assets/images/user5.jpg",
+    avatar: "../assets/images/user5.png",
     image: "../assets/images/post5.jpg",
     caption: "아이스라떼는 진리다 🤍",
     likes: 367,
@@ -390,7 +390,7 @@ export const posts = [
   {
     id: "post24",
     username: "sunny_day",
-    avatar: "../assets/images/user3.jpg",
+    avatar: "../assets/images/user3.png",
     image: "../assets/images/post5.jpg",
     caption: "오늘 날씨 완전 좋다 ☀️",
     likes: 319,
@@ -406,7 +406,7 @@ export const posts = [
   {
     id: "post25",
     username: "coffee_holic",
-    avatar: "../assets/images/user4.jpg",
+    avatar: "../assets/images/user4.png",
     image: "../assets/images/post5.jpg",
     caption: "파란 하늘에 기분까지 맑음!",
     likes: 387,
@@ -426,7 +426,7 @@ export const posts = [
   {
     id: "post26",
     username: "bookworm",
-    avatar: "../assets/images/user7.jpg",
+    avatar: "../assets/images/user7.png",
     image: "../assets/images/post10.jpg",
     caption: "코딩하다가 커피 타임 ☕",
     likes: 34,
@@ -446,7 +446,7 @@ export const posts = [
   {
     id: "post27",
     username: "java_coder",
-    avatar: "../assets/images/user2.jpg",
+    avatar: "../assets/images/user2.png",
     image: "../assets/images/post4.jpg",
     caption: "오늘 날씨 완전 좋다 ☀️",
     likes: 439,
@@ -462,7 +462,7 @@ export const posts = [
   {
     id: "post28",
     username: "yeji_lee",
-    avatar: "../assets/images/user8.jpg",
+    avatar: "../assets/images/user8.png",
     image: "../assets/images/post9.jpg",
     caption: "파란 하늘에 기분까지 맑음!",
     likes: 56,
@@ -482,7 +482,7 @@ export const posts = [
   {
     id: "post29",
     username: "music_lover",
-    avatar: "../assets/images/user6.jpg",
+    avatar: "../assets/images/user6.png",
     image: "../assets/images/post9.jpg",
     caption: "오늘 날씨 완전 좋다 ☀️",
     likes: 164,
@@ -493,7 +493,7 @@ export const posts = [
   {
     id: "post30",
     username: "music_lover",
-    avatar: "../assets/images/user6.jpg",
+    avatar: "../assets/images/user6.png",
     image: "../assets/images/post2.jpg",
     caption: "코딩하다가 커피 타임 ☕",
     likes: 161,
