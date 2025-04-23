@@ -1,4 +1,4 @@
-import { posts } from "../data/storyData.js";
+import { posts } from "../data/mockData.js";
 
 function getUsernameFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
