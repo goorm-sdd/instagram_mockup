@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 375px;
+  height: 88px;
+  background-color: #fafafa;
+  align-items: center;
+}
+
+.back-icon {
+  color: black;
+  margin-left: 15px;
+}
+
+.post-feed {
+  padding-bottom: 79px;
+}
+.post-card {
+  border-bottom: none;
+}
