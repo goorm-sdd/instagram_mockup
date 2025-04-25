@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!searchInput || !resultBox) return;
 
-  const usernames = [...new Set(posts.map(post => post.username))];
+  const usernames = [...new Set(posts.map((post) => post.username))];
 
   const renderResults = (filtered) => {
-    resultBox.innerHTML = "";  
+    resultBox.innerHTML = "";
 
-    filtered.forEach(username => {
-      const userPost = posts.find(post => post.username === username);
-      const userAvatar = userPost ? userPost.avatar : ''; 
+    filtered.forEach((username) => {
+      const userPost = posts.find((post) => post.username === username);
+      const userAvatar = userPost ? userPost.avatar : "";
 
       const div = document.createElement("div");
       div.classList.add("autocomplete-item");
@@ -48,20 +48,31 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const filtered = usernames.filter(username =>
-      username.toLowerCase().includes(keyword)
+    const filtered = usernames.filter((username) =>
+      username.toLowerCase().includes(keyword),
     );
 
     if (exploreGrid) {
-      exploreGrid.classList.add("hide-grid"); 
+      exploreGrid.classList.add("hide-grid");
     }
 
-    renderResults(filtered); 
+    if (filtered.length === 0) {
+      resultBox.innerHTML = "";
+
+      const div = document.createElement("div");
+      div.classList.add("autocomplete-item", "no-result");
+      div.textContent = "존재하지 않는 사용자입니다.";
+
+      resultBox.appendChild(div);
+      return;
+    }
+
+    renderResults(filtered);
   });
 
   document.addEventListener("click", (e) => {
     if (!resultBox.contains(e.target) && e.target !== searchInput) {
-      resultBox.innerHTML = ""; 
+      resultBox.innerHTML = "";
     }
   });
 });
