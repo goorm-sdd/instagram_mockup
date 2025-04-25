@@ -10,7 +10,7 @@ export const posts = [
     comments: [
       {
         user: "yeji_lee",
-        text: "와 배경 미쳤다...",
+        text: "여기는 어디인가요?",
       },
     ],
     timestamp: "2025-04-17T00:22:10.417738",
@@ -20,15 +20,10 @@ export const posts = [
     username: "min_park",
     avatar: "../assets/images/user1.png",
     image: "../assets/images/post2.jpg",
-    caption: "요즘 빠진 책 📚",
+    caption: "",
     likes: 41,
     isLiked: false,
-    comments: [
-      {
-        user: "music_lover",
-        text: "어디예요? 너무 멋져요!",
-      },
-    ],
+    comments: [],
     timestamp: "2025-04-17T06:43:10.417738",
   },
   {
@@ -52,17 +47,17 @@ export const posts = [
     username: "sunny_day",
     avatar: "../assets/images/user3.png",
     image: "../assets/images/post4.jpg",
-    caption: "버스킹 공연 다녀왔어요 🎸",
+    caption: "새로운 취미 발견! 🎨",
     likes: 113,
     isLiked: false,
     comments: [
       {
         user: "java_coder",
-        text: "커피는 역시 아라비카 원두!",
+        text: "엄청 잘 만드셨어요!",
       },
       {
         user: "min_park",
-        text: "나도 가고 싶다!",
+        text: "저도 취미를 만들어 보고 싶어지네요~",
       },
     ],
     timestamp: "2025-04-17T03:26:10.417738",
@@ -72,13 +67,13 @@ export const posts = [
     username: "coffee_holic",
     avatar: "../assets/images/user4.png",
     image: "../assets/images/post5.jpg",
-    caption: "여행 가고 싶다 🌍",
+    caption: "4월에도 눈이 오네요.",
     likes: 12,
     isLiked: false,
     comments: [
       {
         user: "bookworm",
-        text: "나도 가고 싶다!",
+        text: "요즘 날씨가 이상해요.",
       },
     ],
     timestamp: "2025-04-17T03:59:10.417738",
@@ -108,17 +103,13 @@ export const posts = [
     username: "sky_walker",
     avatar: "../assets/images/user5.png",
     image: "../assets/images/post7.jpg",
-    caption: "요즘 빠진 책 📚",
+    caption: "새 프로젝트 시작! 🚀",
     likes: 424,
     isLiked: false,
     comments: [
       {
         user: "yeji_lee",
-        text: "어디예요? 너무 멋져요!",
-      },
-      {
-        user: "sunny_day",
-        text: "어디예요? 너무 멋져요!",
+        text: "화이팅!",
       },
     ],
     timestamp: "2025-04-17T17:06:10.417738",
@@ -128,10 +119,15 @@ export const posts = [
     username: "coffee_holic",
     avatar: "../assets/images/user4.png",
     image: "../assets/images/post8.jpg",
-    caption: "오늘 날씨 완전 좋다 ☀️",
+    caption: "드론으로 찰칵",
     likes: 196,
     isLiked: false,
-    comments: [],
+    comments: [
+      {
+        user: "yeji_lee",
+        text: "오..어디에요?",
+      },
+    ],
     timestamp: "2025-04-16T20:08:10.417738",
   },
   {
@@ -139,13 +135,13 @@ export const posts = [
     username: "min_park",
     avatar: "../assets/images/user1.png",
     image: "../assets/images/post9.jpg",
-    caption: "버스킹 공연 다녀왔어요 🎸",
+    caption: "너무 좋은 날씨 ☀️",
     likes: 13,
     isLiked: false,
     comments: [
       {
         user: "yeji_lee",
-        text: "와 배경 미쳤다...",
+        text: "와 미쳤다...",
       },
     ],
     timestamp: "2025-04-17T16:53:10.417738",
@@ -155,15 +151,10 @@ export const posts = [
     username: "coffee_holic",
     avatar: "../assets/images/user4.png",
     image: "../assets/images/post10.jpg",
-    caption: "여행 가고 싶다 🌍",
+    caption: "",
     likes: 370,
     isLiked: false,
-    comments: [
-      {
-        user: "sunny_day",
-        text: "날씨 짱좋아 보인다!",
-      },
-    ],
+    comments: [],
     timestamp: "2025-04-17T03:41:10.417738",
   },
   {
@@ -177,11 +168,7 @@ export const posts = [
     comments: [
       {
         user: "bookworm",
-        text: "커피는 역시 아라비카 원두!",
-      },
-      {
-        user: "coffee_holic",
-        text: "커피는 역시 아라비카 원두!",
+        text: "오늘 하루도 화이팅 ✨",
       },
     ],
     timestamp: "2025-04-17T09:50:10.417738",
@@ -191,7 +178,7 @@ export const posts = [
     username: "java_coder",
     avatar: "../assets/images/user2.png",
     image: "../assets/images/post12.jpg",
-    caption: "코딩하다가 커피 타임 ☕",
+    caption: "바다보러 왔어요!",
     likes: 206,
     isLiked: false,
     comments: [
@@ -227,7 +214,7 @@ export const posts = [
     username: "music_lover",
     avatar: "../assets/images/user6.png",
     image: "../assets/images/post14.jpg",
-    caption: "요즘 빠진 책 📚",
+    caption: "새 신발 자랑 👟",
     likes: 91,
     isLiked: false,
     comments: [
@@ -237,7 +224,7 @@ export const posts = [
       },
       {
         user: "bookworm",
-        text: "나도 가고 싶다!",
+        text: "신발 너무 이쁜데요!",
       },
     ],
     timestamp: "2025-04-17T13:25:10.417738",
@@ -247,15 +234,10 @@ export const posts = [
     username: "sky_walker",
     avatar: "../assets/images/user5.png",
     image: "../assets/images/post15.jpg",
-    caption: "오늘 날씨 완전 좋다 ☀️",
+    caption: "",
     likes: 335,
     isLiked: false,
-    comments: [
-      {
-        user: "min_park",
-        text: "좋아요 눌렀어요~",
-      },
-    ],
+    comments: [],
     timestamp: "2025-04-17T17:02:10.417738",
   },
   {
@@ -263,7 +245,7 @@ export const posts = [
     username: "bookworm",
     avatar: "../assets/images/user7.png",
     image: "../assets/images/post16.jpg",
-    caption: "코딩하다가 커피 타임 ☕",
+    caption: "잠시 산책하며 벚꽃 구경",
     likes: 450,
     isLiked: false,
     comments: [
@@ -283,7 +265,7 @@ export const posts = [
     username: "sky_walker",
     avatar: "../assets/images/user5.png",
     image: "../assets/images/post17.jpg",
-    caption: "요즘 빠진 책 📚",
+    caption: "산책하는 게 제일 좋아 🐾",
     likes: 227,
     isLiked: false,
     comments: [],
@@ -294,7 +276,7 @@ export const posts = [
     username: "min_park",
     avatar: "../assets/images/user1.png",
     image: "../assets/images/post18.jpg",
-    caption: "요즘 빠진 책 📚",
+    caption: "도시 야경 최고 🏙️",
     likes: 364,
     isLiked: false,
     comments: [],
@@ -305,14 +287,10 @@ export const posts = [
     username: "coffee_holic",
     avatar: "../assets/images/user4.png",
     image: "../assets/images/post19.jpg",
-    caption: "아이스라떼는 진리다 🤍",
+    caption: "",
     likes: 476,
     isLiked: false,
     comments: [
-      {
-        user: "coffee_holic",
-        text: "날씨 짱좋아 보인다!",
-      },
       {
         user: "yeji_lee",
         text: "어디예요? 너무 멋져요!",
@@ -325,7 +303,7 @@ export const posts = [
     username: "yeji_lee",
     avatar: "../assets/images/user8.png",
     image: "../assets/images/post20.jpg",
-    caption: "요즘 빠진 책 📚",
+    caption: "뱎에 비가 많이 오네요.",
     likes: 279,
     isLiked: false,
     comments: [],
@@ -336,17 +314,13 @@ export const posts = [
     username: "min_park",
     avatar: "../assets/images/user1.png",
     image: "../assets/images/post21.jpg",
-    caption: "파란 하늘에 기분까지 맑음!",
+    caption: "이 새 종류를 아시는 분 있나요?",
     likes: 227,
     isLiked: false,
     comments: [
       {
         user: "sky_walker",
-        text: "날씨 짱좋아 보인다!",
-      },
-      {
-        user: "min_park",
-        text: "어디예요? 너무 멋져요!",
+        text: "뭘까요?",
       },
     ],
     timestamp: "2025-04-17T12:49:10.417738",
@@ -356,13 +330,13 @@ export const posts = [
     username: "music_lover",
     avatar: "../assets/images/user6.png",
     image: "../assets/images/post22.jpg",
-    caption: "오늘 날씨 완전 좋다 ☀️",
+    caption: "코딩하다가 커피 타임 ☕️",
     likes: 330,
     isLiked: false,
     comments: [
       {
         user: "yeji_lee",
-        text: "날씨 짱좋아 보인다!",
+        text: "저도 커피 엄청 좋아해요!",
       },
     ],
     timestamp: "2025-04-16T21:22:10.417738",
@@ -372,19 +346,10 @@ export const posts = [
     username: "sky_walker",
     avatar: "../assets/images/user5.png",
     image: "../assets/images/post23.jpg",
-    caption: "아이스라떼는 진리다 🤍",
+    caption: "집순이 행복 모드 🛋️",
     likes: 367,
     isLiked: false,
-    comments: [
-      {
-        user: "java_coder",
-        text: "어디예요? 너무 멋져요!",
-      },
-      {
-        user: "sunny_day",
-        text: "어디예요? 너무 멋져요!",
-      },
-    ],
+    comments: [],
     timestamp: "2025-04-17T16:35:10.417738",
   },
   {
@@ -392,7 +357,7 @@ export const posts = [
     username: "sunny_day",
     avatar: "../assets/images/user3.png",
     image: "../assets/images/post24.jpg",
-    caption: "오늘 날씨 완전 좋다 ☀️",
+    caption: "새로운 취미 발견! 🎨",
     likes: 319,
     isLiked: false,
     comments: [
@@ -408,14 +373,10 @@ export const posts = [
     username: "coffee_holic",
     avatar: "../assets/images/user4.png",
     image: "../assets/images/post25.jpg",
-    caption: "파란 하늘에 기분까지 맑음!",
+    caption: "감성 충전 완료 🎶",
     likes: 387,
     isLiked: false,
     comments: [
-      {
-        user: "sunny_day",
-        text: "날씨 짱좋아 보인다!",
-      },
       {
         user: "bookworm",
         text: "사진 분위기 좋다",
@@ -428,17 +389,13 @@ export const posts = [
     username: "bookworm",
     avatar: "../assets/images/user7.png",
     image: "../assets/images/post26.jpg",
-    caption: "코딩하다가 커피 타임 ☕",
+    caption: "새로운 취미 발견! 🎨",
     likes: 34,
     isLiked: false,
     comments: [
       {
         user: "sunny_day",
         text: "좋아요 눌렀어요~",
-      },
-      {
-        user: "sunny_day",
-        text: "나도 가고 싶다!",
       },
     ],
     timestamp: "2025-04-17T03:44:10.417738",
@@ -448,7 +405,7 @@ export const posts = [
     username: "java_coder",
     avatar: "../assets/images/user2.png",
     image: "../assets/images/post27.jpg",
-    caption: "오늘 날씨 완전 좋다 ☀️",
+    caption: "책 읽으러 왔어요!",
     likes: 439,
     isLiked: false,
     comments: [
@@ -464,7 +421,7 @@ export const posts = [
     username: "yeji_lee",
     avatar: "../assets/images/user8.png",
     image: "../assets/images/post28.jpg",
-    caption: "파란 하늘에 기분까지 맑음!",
+    caption: "",
     likes: 56,
     isLiked: false,
     comments: [
@@ -484,7 +441,7 @@ export const posts = [
     username: "music_lover",
     avatar: "../assets/images/user6.png",
     image: "../assets/images/post29.jpg",
-    caption: "오늘 날씨 완전 좋다 ☀️",
+    caption: "K️🧡",
     likes: 164,
     isLiked: false,
     comments: [],
@@ -495,10 +452,15 @@ export const posts = [
     username: "music_lover",
     avatar: "../assets/images/user6.png",
     image: "../assets/images/post30.jpg",
-    caption: "코딩하다가 커피 타임 ☕",
+    caption: "분위기 좋은 카페",
     likes: 161,
     isLiked: false,
-    comments: [],
+    comments: [
+      {
+        user: "sky_walker",
+        text: "나도 가고 싶다!",
+      },
+    ],
     timestamp: "2025-04-17T17:26:10.417738",
   },
   {
@@ -512,7 +474,7 @@ export const posts = [
     comments: [
       {
         user: "yeji_lee",
-        text: "와 배경 미쳤다...",
+        text: "여기는 어디인가요?",
       },
     ],
     timestamp: "2025-04-17T00:22:10.417738",
@@ -528,7 +490,7 @@ export const posts = [
     comments: [
       {
         user: "yeji_lee",
-        text: "와 배경 미쳤다...",
+        text: "분위기 좋은 거리네요",
       },
     ],
     timestamp: "2025-04-17T00:22:10.417738",
@@ -538,15 +500,10 @@ export const posts = [
     username: "java_coder",
     avatar: "../assets/images/user2.png",
     image: "../assets/images/post33.jpg",
-    caption: "여행 가고 싶다 🌍",
+    caption: "",
     likes: 61,
     isLiked: false,
-    comments: [
-      {
-        user: "yeji_lee",
-        text: "와 배경 미쳤다...",
-      },
-    ],
+    comments: [],
     timestamp: "2025-04-17T00:22:10.417738",
   },
   {
@@ -554,15 +511,10 @@ export const posts = [
     username: "java_coder",
     avatar: "../assets/images/user2.png",
     image: "../assets/images/post34.jpg",
-    caption: "여행 가고 싶다 🌍",
+    caption: "",
     likes: 61,
     isLiked: false,
-    comments: [
-      {
-        user: "yeji_lee",
-        text: "와 배경 미쳤다...",
-      },
-    ],
+    comments: [],
     timestamp: "2025-04-17T00:22:10.417738",
   },
   {
@@ -576,7 +528,7 @@ export const posts = [
     comments: [
       {
         user: "yeji_lee",
-        text: "와 배경 미쳤다...",
+        text: "어디에요?",
       },
     ],
     timestamp: "2025-04-17T00:22:10.417738",
@@ -586,13 +538,13 @@ export const posts = [
     username: "coffee_holic",
     avatar: "../assets/images/user4.png",
     image: "../assets/images/post36.jpg",
-    caption: "여행 가고 싶다 🌍",
+    caption: "오늘 하루도 화이팅 ✨",
     likes: 61,
     isLiked: false,
     comments: [
       {
         user: "yeji_lee",
-        text: "와 배경 미쳤다...",
+        text: "화이팅!",
       },
     ],
     timestamp: "2025-04-17T00:22:10.417738",
@@ -602,15 +554,10 @@ export const posts = [
     username: "music_lover",
     avatar: "../assets/images/user6.png",
     image: "../assets/images/post37.jpg",
-    caption: "여행 가고 싶다 🌍",
+    caption: "",
     likes: 61,
     isLiked: false,
-    comments: [
-      {
-        user: "yeji_lee",
-        text: "와 배경 미쳤다...",
-      },
-    ],
+    comments: [],
     timestamp: "2025-04-17T00:22:10.417738",
   },
   {
@@ -618,13 +565,13 @@ export const posts = [
     username: "music_lover",
     avatar: "../assets/images/user6.png",
     image: "../assets/images/post38.jpg",
-    caption: "여행 가고 싶다 🌍",
+    caption: "시카고",
     likes: 61,
     isLiked: false,
     comments: [
       {
         user: "yeji_lee",
-        text: "와 배경 미쳤다...",
+        text: "감성 충전 완료 🎶",
       },
     ],
     timestamp: "2025-04-17T00:22:10.417738",
@@ -634,13 +581,13 @@ export const posts = [
     username: "sky_walker",
     avatar: "../assets/images/user5.png",
     image: "../assets/images/post39.jpg",
-    caption: "여행 가고 싶다 🌍",
+    caption: "지하철에 사람이 많아요.",
     likes: 61,
     isLiked: false,
     comments: [
       {
-        user: "yeji_lee",
-        text: "와 배경 미쳤다...",
+        user: "music_lover",
+        text: "어디 가시나요?",
       },
     ],
     timestamp: "2025-04-17T00:22:10.417738",
@@ -650,15 +597,10 @@ export const posts = [
     username: "sky_walker",
     avatar: "../assets/images/user5.png",
     image: "../assets/images/post40.jpg",
-    caption: "여행 가고 싶다 🌍",
+    caption: "도시 야경 최고 🏙️",
     likes: 61,
     isLiked: false,
-    comments: [
-      {
-        user: "yeji_lee",
-        text: "와 배경 미쳤다...",
-      },
-    ],
+    comments: [],
     timestamp: "2025-04-17T00:22:10.417738",
   },
 ];
