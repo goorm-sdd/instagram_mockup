@@ -179,7 +179,12 @@ header {
 .tab.active {
   border-bottom: 2px solid black;
 }
-
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -198,4 +203,10 @@ header {
 
 .scroll-sentinel {
   height: 1px;
+}
+
+.hidden-text {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  visibility: hidden;
 }
