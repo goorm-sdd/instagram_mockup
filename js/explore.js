@@ -4,7 +4,7 @@ const feed = document.getElementById("explore-post-feed");
 
 const largePosts = [];
 //일단 랜덤으로 6개 정도만 했는데, 더 필요할 경우 수정 가능 ~
-while (largePosts.length < 6) {
+while (largePosts.length < 4) {
   const randomIndex = Math.floor(Math.random() * posts.length);
   if (!largePosts.includes(randomIndex)) {
     largePosts.push(randomIndex);
