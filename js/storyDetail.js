@@ -84,12 +84,12 @@ function updateDisplayBar() {
 
 let timeoutId;
 
-// function resetTimer() {
-//   clearTimeout(timeoutId);
-//   timeoutId = setTimeout(() => {
-//     window.location.href = "../html/index.html";
-//   }, 4000);
-// }
+function resetTimer() {
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(() => {
+    window.location.href = "../html/index.html";
+  }, 4000);
+}
 
 const arrowLeft = document.querySelector(".arrow-left");
 const arrowRight = document.querySelector(".arrow-right");
@@ -105,8 +105,8 @@ arrowLeft.addEventListener("click", () => {
 
   currentLocation--;
   updateDisplayBar();
-  if (currentLocation < 0) {
-    currentLocation = 0;
+  if (currentLocation < 1) {
+    currentLocation = 1;
   }
   resetTimer();
 });
