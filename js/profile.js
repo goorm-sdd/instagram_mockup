@@ -3,16 +3,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
+      const tabInner = tab.querySelector(".tab-inner");
+      const tabId = tabInner.id;
+
       tabs.forEach((t) => t.classList.remove("active"));
       tab.classList.add("active");
+
+      const grid = document.querySelector(".grid");
+
+      if (tabId === "post-tab") {
+        grid.innerHTML = "";
+        for (let i = 1; i <= 10; i++) {
+          const img = document.createElement("img");
+          img.src = `../assets/images/post${i}.jpg`;
+          img.alt = `post${i}`;
+          grid.appendChild(img);
+        }
+      } else {
+        grid.innerHTML = "";
+      }
     });
   });
-});
-const grid = document.querySelector(".grid");
 
-for (let i = 1; i <= 10; i++) {
-  const img = document.createElement("img");
-  img.src = `../assets/images/post${i}.jpg`;
-  img.alt = `post${i}`;
-  grid.appendChild(img);
-}
+  const postTabInner = document.getElementById("post-tab");
+  const postTabButton = postTabInner.closest(".tab");
+  postTabButton.click();
+});
