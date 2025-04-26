@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const headerUsername = document.querySelector(".profile-username-text");
   if (headerUsername) headerUsername.textContent = username;
-  
+
   const grid = document.getElementById("user-posts");
   if (!grid) return;
 
   grid.innerHTML = "";
 
-  
+
   for (let i = 1; i <= 10; i++) {
     const img = document.createElement("img");
     img.src = `../assets/images/post${i}.jpg`;
